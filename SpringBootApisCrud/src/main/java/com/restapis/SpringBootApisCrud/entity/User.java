@@ -1,11 +1,12 @@
 package com.restapis.SpringBootApisCrud.entity;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name= "users")
@@ -14,8 +15,13 @@ public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	 Long id;
+	
+	@NotEmpty
 	 String firstName;
+	@NotEmpty
 	 String lastName;
+	@NotEmpty
+	@Email(message = "please enter valid email id")
 	 String email;
 	 
 	public User() {

@@ -18,6 +18,8 @@ import com.restapis.SpringBootApisCrud.entity.User;
 import com.restapis.SpringBootApisCrud.repository.UserRepository;
 import com.restapis.SpringBootApisCrud.service.UserService;
 
+import jakarta.validation.Valid;
+
 
 @RestController
 @RequestMapping("api/users")
@@ -27,7 +29,7 @@ public class UserController {
 	private UserService userService;
 
 	@PostMapping
-    public ResponseEntity<User> createUser(@RequestBody User user){
+    public ResponseEntity<User> createUser(@Valid @RequestBody User user){
 		System.out.print(user);
         User savedUser = userService.createUser(user);
         return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
@@ -46,7 +48,7 @@ public class UserController {
 	
 	@PutMapping("{id}")
 	public ResponseEntity<User> updateUser(@PathVariable("id") Long userId,
-										   @RequestBody User user){
+										   @RequestBody @Valid User user){
 		user.setId(userId);
 		User updatedUser= userService.updateUser(user);
 		return new ResponseEntity<>(updatedUser, HttpStatus.OK);
