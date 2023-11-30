@@ -1,5 +1,6 @@
 package com.example.Mentor.service;
 
+import com.example.Mentor.entity.APIResponse;
 import com.example.Mentor.entity.Mentor;
 
 import java.util.List;
@@ -12,7 +13,7 @@ public interface MentorService {
     // Read operation
     List<Mentor> getAllMentors();
 
-    Optional<Mentor> getMentorById(Long id);
+    Optional<APIResponse> getMentorById(Long id);
 
     // Update operation
     Mentor updateMentor(Long id, Mentor updatedMentor);

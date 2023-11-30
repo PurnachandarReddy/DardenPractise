@@ -20,4 +20,5 @@ public class Mentor {
     private Long id;
     private String mentorName;
     private String expertise;
+    private Long courseId;
 }

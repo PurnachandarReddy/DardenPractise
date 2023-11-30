@@ -1,5 +1,6 @@
 package com.example.Mentor.controller;
 
+import com.example.Mentor.entity.APIResponse;
 import com.example.Mentor.entity.Mentor;
 import com.example.Mentor.service.MentorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,9 +32,9 @@ public class MentorController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Mentor> getMentorById(@PathVariable Long id) {
-        Optional<Mentor> mentor = mentorService.getMentorById(id);
-        return mentor.map(value -> new ResponseEntity<>(value, HttpStatus.OK))
+    public ResponseEntity<APIResponse> getMentorById(@PathVariable Long id) {
+        Optional<APIResponse> apiResponse = mentorService.getMentorById(id);
+        return apiResponse.map(value -> new ResponseEntity<>(value, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
