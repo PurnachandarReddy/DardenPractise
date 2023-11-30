@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Case study.iml" filepath="$PROJECT_DIR$/.idea/Case study.iml" />
       <module fileurl="file://$PROJECT_DIR$/Course/Course.iml" filepath="$PROJECT_DIR$/Course/Course.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mentor/Mentor.iml" filepath="$PROJECT_DIR$/Mentor/Mentor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-Registry/service-Registry.iml" filepath="$PROJECT_DIR$/service-Registry/service-Registry.iml" />
     </modules>
   </component>
 </project>

@@ -5,5 +5,9 @@
     <file url="file://$PROJECT_DIR$/Course/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Mentor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Mentor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-Registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-Registry/src/main/resources" charset="UTF-8" />
   </component>
 </project>
